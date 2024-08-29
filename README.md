@@ -19,4 +19,4 @@ Incluí um formulário de busca na barra de navegação para permitir que os usu
 Apliquei técnicas de CSS para garantir que todos os elementos do site fossem visualmente harmoniosos e responsivos, melhorando a usabilidade e a estética geral do site. 
 
 
-💻![Bootstrap-exercicio](https://github.com/user-attachments/assets/e9345856-6768-4caa-b0be-6445584d27f4)
+![Bootstrap-responsivo](https://github.com/user-attachments/assets/91ff94ba-f607-4729-889a-ba9ed60daaf2)
