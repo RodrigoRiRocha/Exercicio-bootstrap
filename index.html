@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <!-- Início da barra de navegação -->
+    <nav class="navbar navbar-expand-lg bg-light navbar-light">
+
+        <div class="container-fluid">
+
+            <!-- Marca da barra de navegação (logo ou nome da empresa) -->
+            <a class="navbar-brand" href="#">
+                <img src="./imagens/hospital.svg" alt="Logo" width="30" height="24"
+                    class="d-inline-block align-text-top">
+                OncoGem</a>
+
+            <!-- Botão de alternância (toggle) para dispositivos móveis -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Conteúdo da barra de navegação, incluindo links e formulário de busca -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                <!-- Início da lista de links de navegação -->
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                    <!-- Item de navegação "Home" (link ativo) -->
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Clientes</a>
+                    </li>
+
+                    <!-- Item de navegação "Link" -->
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Médicos</a>
+                    </li>
+
+                    <!-- Item de navegação com menu suspenso (dropdown) -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Agendamentos
+                        </a>
+                        <!-- Itens do menu suspenso -->
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Exames agendados</a></li>
+                            <li><a class="dropdown-item" href="#">Reagendar exame</a></li>
+                            <li><a class="dropdown-item" href="#">Cancelar exame</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+                <!-- Fim da lista de links de navegação -->
+
+                <!-- Formulário de busca dentro da barra de navegação -->
+                <form class="d-flex  w-50" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Busque em todo o site"
+                        aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Buscar</button>
+                </form>
+
+            </div>
+            <!-- Fim do conteúdo da barra de navegação -->
+
+        </div>
+    </nav>
+    <!-- Fim da barra de navegação -->
+
+    <!-- Início do Carousel -->
+    <div id="carouselExampleCaptions" class="carousel slide carousel-custom">
+
+        <!-- Indicadores do Carousel (pequenos botões que indicam qual slide está ativo) -->
+        <div class="carousel-indicators">
+            <!-- Botão para o Slide 1 (ativo por padrão) -->
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+
+            <!-- Botão para o Slide 2 -->
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+
+            <!-- Botão para o Slide 3 -->
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <!-- Fim dos Indicadores -->
+
+        <!-- Container que contém todos os slides do Carousel -->
+        <div class="carousel-inner">
+            <!-- Slide 1 (ativo por padrão) -->
+            <div class="carousel-item active">
+                <!-- Imagem do Slide 1 -->
+                <img src="./blood-test-5601437.jpg" class="d-block w-100" alt="tubo edta">
+
+                <!-- Legenda do Slide 1 (visível apenas em dispositivos médios e grandes) -->
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Inovação em Oncogenética</h5>
+                    <p>Nosso laboratório está na vanguarda da pesquisa genética, oferecendo diagnósticos precisos para
+                        tratamentos personalizados.</p>
+                </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="carousel-item">
+                <!-- Imagem do Slide 2 -->
+                <img src="./imagens/chemist-2815640.jpg" class="d-block w-100" alt="profissional no laboratório">
+
+                <!-- Legenda do Slide 2 -->
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Tecnologia de Ponta</h5>
+                    <p>Equipamentos avançados e uma equipe qualificada garantem resultados rápidos e confiáveis para o
+                        melhor cuidado ao paciente.</p>
+                </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="carousel-item">
+                <!-- Imagem do Slide 3 -->
+                <img src="./imagens/lab-3498584.jpg" class="d-block w-100" alt="tubos de coleta">
+
+                <!-- Legenda do Slide 3 -->
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Pesquisa e Desenvolvimento</h5>
+                    <p>Através da pesquisa contínua, estamos desvendando os segredos genéticos do câncer para
+                        desenvolver novas terapias.</p>
+                </div>
+            </div>
+        </div>
+        <!-- Fim do Container dos Slides -->
+
+        <!-- Controle do Carousel (Botão para ir ao slide anterior) -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+
+        <!-- Controle do Carousel (Botão para ir ao próximo slide) -->
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+        <!-- Fim dos Controles do Carousel -->
+
+    </div>
+    <!-- Fim do Carousel -->
+
+    <!-- Início do Container -->
+    <div class="container mt-4">
+        <!-- Início da Linha do Grid -->
+        <div class="row">
+
+            <!-- Card 1 -->
+            <div class="col-12 col-md-6 col-lg-4 mb-4">
+                <!-- Início do Card -->
+                <div class="card">
+                    <!-- Imagem do Card -->
+                    <img src="./imagens/imagem-card-1.jpg" class="card-img-top" alt="Imagem do Card 1">
+                    <!-- Corpo do Card -->
+                    <div class="card-body">
+                        <!-- Texto do Card -->
+                        <p class="card-text">
+                            A oncogenética explora como alterações genéticas podem influenciar o desenvolvimento do
+                            câncer. Com a identificação de mutações específicas, é possível personalizar tratamentos e
+                            melhorar o prognóstico dos pacientes.
+                        </p>
+                        <button class="btn btn-primary">Leia Mais</button>
+                    </div>
+                </div>
+                <!-- Fim do Card -->
+            </div>
+
+            <!-- Card 2 -->
+            <div class="col-12 col-md-6 col-lg-4 mb-4">
+                <!-- Início do Card -->
+                <div class="card">
+                    <!-- Imagem do Card -->
+                    <img src="./imagens/imagem-card-2.jpg" class="card-img-top" alt="Imagem do Card 2">
+                    <!-- Corpo do Card -->
+                    <div class="card-body">
+
+                        <!-- Texto do Card -->
+                        <p class="card-text">
+                            Utilizando técnicas avançadas de sequenciamento genético, o diagnóstico em oncogenética
+                            permite a detecção precoce de predisposições ao câncer. Isso possibilita intervenções mais
+                            eficazes e a implementação de estratégias preventivas.
+                        </p>
+                        <button class="btn btn-primary">Leia Mais</button>
+                    </div>
+                </div>
+                <!-- Fim do Card -->
+            </div>
+
+            <!-- Card 3 -->
+            <div class="col-12 col-md-6 col-lg-4 mb-4">
+                <!-- Início do Card -->
+                <div class="card">
+                    <!-- Imagem do Card -->
+                    <img src="./imagens/imagen-card-3.jpg" class="card-img-top" alt="Imagem do Card 3">
+                    <!-- Corpo do Card -->
+                    <div class="card-body">
+                        <!-- Texto do Card -->
+                        <p class="card-text">
+                            A oncogenética oferece a capacidade de criar tratamentos personalizados baseados no perfil
+                            genético de cada paciente. Isso resulta em terapias mais direcionadas, reduzindo efeitos
+                            colaterais e aumentando a eficácia dos tratamentos.
+                        </p>
+                        <button class="btn btn-primary">Leia Mais</button>
+                    </div>
+                </div>
+                <!-- Fim do Card -->
+            </div>
+
+            <!-- Adicione mais cards conforme necessário -->
+
+        </div>
+        <!-- Fim da Linha do Grid -->
+    </div>
+    <!-- Fim do Container -->
+
+
+
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+
+</html>
